@@ -19,20 +19,22 @@ export function Home() {
         Sexta, 5 de outubro de 2022.
       </Text>
 
-      <TextInput 
-        style={styles.input} 
-        placeholder="Nome do participante"
-        placeholderTextColor= "#6B6B6B"
-      />
-   
-      <TouchableOpacity 
-        style={styles.button}
-        onPress={handleParticipantAdd}
-      >
-        <Text style={styles.buttonText}>
-          +
-        </Text>
-      </TouchableOpacity>
+      <View style={styles.form}>
+        <TextInput 
+          style={styles.input} 
+          placeholder="Nome do participante"
+          placeholderTextColor= "#6B6B6B"
+        />
+    
+        <TouchableOpacity 
+          style={styles.button}
+          onPress={handleParticipantAdd}
+        >
+          <Text style={styles.buttonText}>
+            +
+          </Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
